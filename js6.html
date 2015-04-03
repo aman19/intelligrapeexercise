@@ -1,0 +1,25 @@
+<html>
+<head><title>Form validation</title>
+</head>
+<script type="text/javascript">
+function validation()
+{
+if(document.getElementById("txt1").value==="")
+{
+alert("Name cannot be empty");
+}
+if(document.getElementById("txt2").value<18)
+{
+alert("Age should be greater or equal to 18");
+}
+}
+</script>
+</head>
+<body>
+<form>
+Name:<Input type="text" name="text1" id="txt1"/>
+Age :<Input type="text" name="text2" id="txt2"/>
+<Input type="button" name="button1" value="Submit" id="butt" onClick="validation()"/>
+</form>
+</body>
+</html> 
