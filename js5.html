@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+function textchange()
+{
+var username=prompt("Enter user name :");
+document.getElementById("txt1").value=username;
+document.getElementById("txt2").value=document.getElementById("txt1").value;
+}
+</script>
+</head>
+<body>
+<form>
+<Input type="text" name="text1" id="txt1" value="aman"/>
+<Input type="text" name="text2" id="txt2"/>
+<Input type="button" name="button1" id="butt" value="Click" onClick="textchange()"/>
+</form>
+</body>
+</html>
